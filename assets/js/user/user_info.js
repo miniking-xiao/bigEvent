@@ -30,9 +30,9 @@ $(function(){
     }
     
 
-    // 实现重置效果
+    // 实现重置表单的数据--回到修改前，而不是清空
     $('#btnReset').on('click',function(e){
-        e.preventDefault();
+        e.preventDefault(); //防止清空表单内容
         initUserInfo();
     })
 

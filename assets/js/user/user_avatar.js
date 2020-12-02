@@ -14,6 +14,7 @@ $(function(){
   $image.cropper(options)
 
 
+
   // 隐藏文件上传框
   $('#file').hide();
 
@@ -64,6 +65,5 @@ $(function(){
               window.parent.getUserInfo()
             }
         })
-
     })
 })

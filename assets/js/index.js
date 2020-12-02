@@ -42,6 +42,7 @@ function getUserInfo(){
         // }
     })
 }
+
 // 渲染用户头像
 function renderAvator(user){
     // 获取用户名称  昵称（写在前面） 和 用户名
@@ -50,13 +51,13 @@ function renderAvator(user){
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name);
     // 渲染用户头像
     if(user.user_pic !== null){
-        $('.layui-nav-img').attr('src','user.user_pic').show()
-        $('.text_avator').hide();
+        $('.layui-nav-img').attr('src',user.user_pic).show();
+        $('.text-avatar').hide();
     } else {
         // 渲染文本头像
         $('.layui-nav-img').hide();
         var first = name[0].toUpperCase();
-        $('.text_avator').html(first).show();
+        $('.text-avatar').html(first).show();
     }
     
 }

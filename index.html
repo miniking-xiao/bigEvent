@@ -19,7 +19,7 @@
                 <li class="layui-nav-item">
                     <a href="javascript:;">
                         <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                        <span class="text-avater">A</span>
+                        <span class="text-avatar">A</span>
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
@@ -36,10 +36,11 @@
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <!-- lay-shrink="all" 类似排他 -->
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all">
                     <div class="userinfo">
                         <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                        <span class="text-avater">A</span>
+                        <span class="text-avatar">A</span>
                         <span id="welcome">欢迎***</span>
                     </div>
                     <li class="layui-nav-item layui-this"><a href="./home/dashboard.html" target="fm"><span
@@ -47,9 +48,13 @@
                     <li class="layui-nav-item">
                         <a class="" href="javascript:;"><span class="iconfont icon-16"></span>文章管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>发布文章</a></dd>
+                            <dd><a href="/article/art_category.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>文章类别</a>
+                            </dd>
+                            <dd><a href="/article/art_list.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>文章列表</a></dd>
+                            <dd><a href="/article/art_published.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>发布文章</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
@@ -63,7 +68,7 @@
                                         class="layui-icon layui-icon-app"></i>重置密码</a>
                             </dd>
                         </dl>
-                    </li>å
+                    </li>
 
                 </ul>
             </div>
